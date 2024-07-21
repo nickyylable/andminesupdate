@@ -156,7 +156,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-fill-color: transparent;
-            animation: float 6s infinite ease-in-out, backgroundShiftText 10s infinite linear, textGlow 8s infinite alternate;
+            animation: float 6s infinite ease-in-out, backgroundShiftText 10s infinite linear;
+            text-shadow: 0 0 10px #89f7fe, 0 0 20px #66a6ff;
         }
         
         @keyframes float {
@@ -174,21 +175,6 @@
             }
             50% {
                 background-position: 0% 50%;
-            }
-        }
-        
-        @keyframes textGlow {
-            0%, 100% {
-                text-shadow: 
-                    0 0 8px #89f7fe, 
-                    0 0 10px #89f7fe, 
-                    0 0 20px #66a6ff;
-            }
-            50% {
-                text-shadow: 
-                    0 0 10px #66a6ff, 
-                    0 0 15px #66a6ff, 
-                    0 0 25px #89f7fe;
             }
         }
 
