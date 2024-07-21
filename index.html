@@ -151,13 +151,9 @@
             font-weight: bold;
             margin-bottom: 18px;
             text-align: center;
-            background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
+            color: white;  /* Установка цвета текста в белый */
             animation: float 6s infinite ease-in-out, backgroundShiftText 10s infinite linear;
-            text-shadow: 0 0 10px #89f7fe, 0 0 20px #66a6ff;
+            text-shadow: 0 0 10px #89f7fe, 0 0 20px #66a6ff; /* Подсветка в тех же тонах */
         }
         
         @keyframes float {
@@ -177,6 +173,7 @@
                 background-position: 0% 50%;
             }
         }
+
 
         .notification {
             display: none;
@@ -240,7 +237,7 @@
 </head>
 <body>
  <div id="video-background"></div>
-    <div class="game-title">N$GOCIO</div>
+    <div class="game-title">NEGOCIO</div>
     <div class="game-board" id="gameBoard"></div>
     <div class="play-buttons-container">
         <button class="reset-button">
